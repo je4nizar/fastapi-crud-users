@@ -2,6 +2,7 @@ from sqlalchemy import Table, Column
 from sqlalchemy.sql.sqltypes import Integer, String, DateTime
 from config.db import meta, engine
 
+# Defines the "users" table with its columns and data types
 users = Table("users", meta,
               Column("id", Integer, primary_key=True),
               Column("name", String(255)),
